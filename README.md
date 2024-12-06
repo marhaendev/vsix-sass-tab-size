@@ -1,0 +1,1 @@
+# vsix-sass-tab-size
