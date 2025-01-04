@@ -1,0 +1,58 @@
+{
+  "name": "sass-tab-size",
+  "displayName": "Sass Tab Size",
+  "description": "Sets tab size to 2 spaces for Sass files.",
+  "version": "1.0.0",
+  "publisher": "marhaendev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marhaendev/vsix-sass-tab-size"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "sass",
+        "extensions": [".sass"],
+        "aliases": ["Sass", "sass"]
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "[sass]": {
+          "editor.tabSize": 2,
+          "editor.insertSpaces": true
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
