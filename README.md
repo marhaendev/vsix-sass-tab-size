@@ -4,13 +4,20 @@ This extension ensures that when you press the Tab key in `.sass` files, it inse
 
 ## Features
 - Automatically sets tab size to 2 spaces for `.sass` files.
-- No additional configuration required after installation.
+- Seamlessly integrates with your existing VSCode settings.
 
-## Installation
-1. Download the `.vsix` file.
-2. In VSCode, go to the Extensions view (`Ctrl + Shift + X`).
-3. Click the three dots in the upper-right corner and select "Install from VSIX...".
-4. Select the `.vsix` file and click Open.
+## How to Download from Visual Studio Code
+1. Open **Extensions Marketplace** in Visual Studio Code.
+2. Search for **Sass Tab Size Extension**.
+3. Click **Install** to install the extension.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## How to Download from [Marketplace VSCode](https://marketplace.visualstudio.com/)
+1. Download the extension [Sass Tab Size Extension](https://marketplace.visualstudio.com/items?itemName=marhaendev.sass-tab-size).
+2. Open **Extensions Marketplace** in Visual Studio Code.
+3. Click the three-dot icon (**...**) and select **Install from VSIX** to install the downloaded extension file.
+
+## How to Use
+1. Open a `.sass` file in Visual Studio Code.
+2. Press the **Tab** key while editing the file.
+
+The extension will automatically insert 2 spaces instead of a tab character.
